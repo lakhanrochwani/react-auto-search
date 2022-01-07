@@ -6,7 +6,7 @@ const Results = ({ text, input }) => {
   return (
     <>
       <li>{text}</li>
-      {console.log(styled)}
+      {console.log('Styled:', styled)}
     </>
   );
 };

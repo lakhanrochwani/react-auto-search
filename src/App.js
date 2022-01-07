@@ -14,7 +14,7 @@ export default function App() {
   }
 
   useEffect(() => {
-    console.log('Inside', input);
+    // console.log('Inside', input);
     if (input.length >= 3) {
       fetch('https://jsonplaceholder.typicode.com/posts')
         .then((res) => res.json())
@@ -23,7 +23,6 @@ export default function App() {
             return e.title;
           });
           let updatedResults = output.filter((text) => text.includes(input));
-          console.log('Updated Results:', updatedResults);
           setResults(updatedResults);
         });
     }
