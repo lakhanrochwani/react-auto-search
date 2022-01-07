@@ -1,11 +1,10 @@
 import React from 'react';
 
 const Results = ({ text, input }) => {
-  let styled = text.split(input);
-
+  let styled = text.replace(input, '<strong>' + input + '</strong>');
   return (
     <>
-      <li>{text}</li>
+      <li>{styled}</li>
       {console.log('Styled:', styled)}
     </>
   );
