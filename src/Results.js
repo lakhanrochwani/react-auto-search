@@ -1,7 +1,7 @@
 import React from 'react';
 
 const Results = ({ text, input }) => {
-  let styled = text.replace(input, '<strong>' + input + '</strong>');
+  let styled = text.replaceAll(input, '<strong>' + input + '</strong>');
   return (
     <>
       <li>{styled}</li>
